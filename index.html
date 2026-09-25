@@ -67,6 +67,61 @@
         </div>
 
     </nav>
-</body>
+    
+    <section class="bg-light py-5">
+
+        <div class="container">
+        <!-- #row - cria uma linha do sistema de grid do bootstrap.
+     align-items-center - centraliza verticalmente os elementos 
+     que serao dentro da linha-->
+     <div class="row align-items-center">
+        <!-- col md 6 cria uma coluna que ocupa 6 das 12 partes do grid a partir
+         de telas medias(md)
+         como o grid possui 12 colunas
+         6+6 = duas colunas 50% do espaco.
+         Em telas menores que md , as colunas ficam uma abaixo da outra-->
+         <div class="col-md-6">
+            <!-- display 4 aplica um tamanho grande de destaque ao texto 
+             fw-bold - deixa o texto em negrito-->
+             <h1 class="display-4 fw-bold">
+                A melhor pizza de Fernandopolis!
+             </h1>
+
+             <!-- lead - deixa o parágrafo maior e com aparência de texto
+               de destaque/apresentação.-->
+               <p class="lead">
+                Pizzas artesanaias preparadas com ingredientes selecionados
+                pelo próprio Ratatouille e muito sabor.
+               </p>
+
+             <!-- btn - aplica a estilização padrão de botão do Bootstrap 
+              btn-danger - deixa o botão vermelho.
+              btn-lg - cria um botão de tamanho grande.
+              lg - large -->
+              <a href="#pizza" class="btn btn-danger btn-lg">
+                Ver Cardápio
+              </a>
+         </div>
+
+         <!--col-md-6 - ocupa as outras 6 colunas do Grid
+         text-center - centraliza o conteúdo/texto
+         mt-4 - adiciona margem superior.
+         m = margin
+         t = top
+         mt-md-0 a partir de telas md, remove a margem superior.
+         Isso é util porque no celular a imagem ficará abaixo do texto
+         e precisará de um espaço entre eles. -->
+         <div class="col-md-6 text-center mt-4 mt-md-0">
+            <!-- img-fluid - torna a imagem responsiva.
+             a imagem diminui de acordo co o tamanho disponivel.
+             roudend - deixa os cantos da imagem arredondados.
+             shadow - adiciona uma sombra. -->
+             <img src="img/pizza.png" class="img-fluid rounded shadow" alt="Pizza">
+         </div>
+     </div>
+     </div>
+    </section>
+    
+    </body>
 
 </html>
